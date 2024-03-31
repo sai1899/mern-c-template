@@ -1,3 +1,16 @@
-const a = [1, 2, 3, 5];
+require("dotenv").config();
+const logger = require("./config/logger");
+const app = require("./app");
 
-console.log(a);
+function startSeverr() {
+    try {
+        
+        logger.info(`port is ${process.env.PORT}`);
+        app.listen(process.env.PORT);
+    } catch (error) {
+        logger.error(error);
+        process.exit(1);
+    }
+}
+
+startSeverr();
