@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/", async (req, res, next) => {
     console.log("server started");
-    // res.json("Hello");
+    res.status(200).json("Hello");
 });
 
 app.use((err, req, res, next) => {
