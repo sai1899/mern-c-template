@@ -1,20 +1,33 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sai1899/mern-auth-service.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sai1899/mern-auth-service/issues"
-  },
-  "homepage": "https://github.com/sai1899/mern-auth-service#readme"
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node src/server.js",
+        "prepare": "husky",
+        "prettier:fix": "npx prettier . --write",
+        "lint:fix": "eslint src/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sai1899/mern-auth-service.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sai1899/mern-auth-service/issues"
+    },
+    "homepage": "https://github.com/sai1899/mern-auth-service#readme",
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.34.1",
+        "prettier": "3.2.5"
+    },
+    "dependencies": {
+        "husky": "^9.0.11"
+    }
 }
