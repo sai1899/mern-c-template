@@ -1,3 +1,3 @@
-const a = [1, 2, 4];
+const a = [1, 2, 3, 5];
 
 console.log(a);
